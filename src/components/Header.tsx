@@ -52,6 +52,13 @@ export function Header({ currentLang, onLanguageChange }: HeaderProps) {
               <Search className="h-4 w-4" />
             </Button>
             <LanguageSwitcher currentLang={currentLang} onLanguageChange={onLanguageChange} />
+            <Button 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-white"
+              onClick={() => window.open('https://webdutos.com/autolink/', '_blank')}
+            >
+              Login RDOWEB
+            </Button>
             <Button className="bg-primary hover:bg-primary-dark">
               {t.nav.getQuote}
             </Button>

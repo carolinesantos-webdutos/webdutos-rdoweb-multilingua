@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { PlatformAdvantagesSection } from "@/components/PlatformAdvantagesSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { ContactFormSection } from "@/components/ContactFormSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
-import { SolutionsSection } from "@/components/SolutionsSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
-import { PlatformSection } from "@/components/PlatformSection";
 import { Footer } from "@/components/Footer";
 import { Language } from "@/lib/i18n";
 
@@ -14,13 +15,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <Header currentLang={currentLang} onLanguageChange={setCurrentLang} />
-      <HeroSection currentLang={currentLang} />
+      <HeroSection currentLang={currentLang} onLanguageChange={setCurrentLang} />
+      <FeaturesSection currentLang={currentLang} />
+      <DifferentialsSection currentLang={currentLang} />
+      <PlatformAdvantagesSection currentLang={currentLang} />
+      <TestimonialsSection currentLang={currentLang} />
+      <ContactFormSection currentLang={currentLang} />
       <AboutSection currentLang={currentLang} />
       <ServicesSection currentLang={currentLang} />
-      <SolutionsSection currentLang={currentLang} />
-      <ProjectsSection currentLang={currentLang} />
-      <PlatformSection currentLang={currentLang} />
       <Footer currentLang={currentLang} />
     </div>
   );
